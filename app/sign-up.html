@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="css/app.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="layout-container">
+				<div class="header__inner">
+					<div class="logo">
+						<img class="logo__img" src="images/icons/logo.svg" alt="logo">
+						<span class="logo__text">Marico</span>
+					</div>
+					<nav class="header__menu">
+						<ul class="header__menu-list header__menu-list--hidden">
+							<li class="header__menu-item">
+								<div class="dropdown header__dropdown">
+									<div class="dropdown__helper"></div>
+									<button class="dropdown__btn_js header__dropdown-btn">
+										Use Cases
+									</button>
+									<ul class="dropdown__list header__dropdown-list">
+										<!-- <img class="dropdown__hand" src="images/icons/hand.png" alt="hand"> -->
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												About
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												Pricing
+											</a>
+										</li>
+										<li class="dropdown__item">
+											<a class="dropdown__link" href="#">
+												FAQ
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="#">
+									About
+								</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="#">
+									Pricing
+								</a>
+							</li>
+							<li class="header__menu-item">
+								<a class="header__menu-link" href="#">
+									Blog
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__auth">
+						<a class="header__login" href="#">
+							Login
+						</a>
+						<a class="header__reg" href="#">
+							Sign up
+						</a>
+					</div>
+					<button class="header__btn-mobile">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="auth">
+				<div class="container-fluid">
+					<div class="auth__inner">
+						<h2 class="auth__title">
+							Sign up
+						</h2>
+						<p class="auth__text">
+							Fill all field for create an account.
+						</p>
+						<form class="auth__form" action="#" method="post">
+							<div class="auth__input-wrap">
+								<input class="auth__input" type="text" name="username" placeholder="Username">
+								<img class="auth__input-icon" src="images/icons/user.svg" alt="user">
+							</div>
+							<div class="auth__input-wrap">
+								<input class="auth__input" type="text" name="email" placeholder="Email Address">
+								<img class="auth__input-icon" src="images/icons/at.svg" alt="at">
+							</div>
+							<div class="auth__input-wrap">
+								<input class="auth__input" type="password" name="password" placeholder="Password">
+								<img class="auth__input-icon show-input_js" src="images/icons/close-eye.png" alt="eye">
+							</div>
+							<button class="auth__button" type="submit">Sign up</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer-auth">
+			<div class="container-fluid">
+				<div class="footer-auth__inner">
+					<h3 class="footer-auth__title">
+						Or
+					</h3>
+					<p class="footer-auth__subtitle">
+						Sign up with...
+					</p>
+					<div class="footer-auth__buttons">
+						<button class="footer-auth__btn">
+							<img class="footer-auth__btn-logo" src="images/icons/facebook-logo.svg" alt="">
+							Sign up with Facebook
+						</button>
+
+						<button class="footer-auth__btn">
+							<img class="footer-auth__btn-logo" src="images/icons/google.svg" alt="">
+							Sign up with Google
+						</button>
+
+						<button class="footer-auth__btn">
+							<img class="footer-auth__btn-logo" src="images/icons/apple.svg" alt="">
+							Sign up with Apple
+						</button>
+					</div>
+					<span class="footer-auth__bottom-text">
+						Already have an account? Please Log in.
+					</span>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script type="text/javascript" src="js/app.min.js"></script>
+</body>
+</html>

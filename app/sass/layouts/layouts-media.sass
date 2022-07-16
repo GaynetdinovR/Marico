@@ -1,0 +1,63 @@
+@media (max-width: $size-m2)
+	.footer-auth__inner
+		padding: 0 30px 75px
+
+@media (max-width: $tablet)
+	.header__dropdown-btn
+		display: none
+
+	.header__menu-item
+		margin-right: 20px
+
+
+@media(max-width: $tablet-s)
+	.footer__bottom-menu-list
+		display: none
+
+	.footer__bottom-logo
+		margin: 0 auto
+
+
+@media (max-width: $phone)
+
+	.header
+		font-size: 16px
+
+		&__btn-mobile
+			display: block
+
+		&__login
+			margin-right: 10px
+
+		&__auth
+			margin-left: -20px
+
+		&__dropdown-list
+			display: none
+
+		&__menu-list
+			display: block
+			position: absolute
+			right: -25px
+			top: 120px
+			font-size: 30px
+			line-height: 45px
+			background-color: $black-2
+			width: 45%
+			border-radius: 15px 0 0 15px
+			padding: 15px
+			transition: all 0.5s
+
+		&__menu-list--hidden
+			transform: translateY(-320px)
+
+	.footer__top-title
+		font-size: 75px
+		line-height: 110px
+	.footer-auth__inner
+		padding: 0 0 75px
+
+	.footer-auth__btn
+		width: 100%
+		justify-content: flex-start
+		padding-right: 50px

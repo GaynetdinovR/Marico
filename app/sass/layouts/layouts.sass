@@ -1,0 +1,215 @@
+.header
+	font-size: 20px
+	line-height: 30px
+	font-weight: 500
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 50px 0
+
+	&__menu-list
+		display: flex
+
+	&__menu-item
+		margin-right: 40px
+
+	&__menu-item:last-child
+		margin-right: 0
+
+	&__menu-link
+		color: $grey
+		&:hover
+			color: $white
+
+	&__btn-mobile
+		background-color: transparent
+		border: none
+		display: none
+		span 
+			width: 40px
+			height: 4px
+			background-color: $white
+			display: block
+			margin-bottom: 10px
+		&:active
+			span 
+				background-color: $grey
+
+	&__dropdown-btn
+		background: transparent
+		border: none
+		color: $grey
+		font-size: 20px
+		font-family: $font
+		font-weight: 500
+		padding: 0
+		padding-right: 10px
+		position: relative
+		cursor: pointer
+		&::before
+			content: ''
+			position: absolute
+			width: 7px
+			height: 7px
+			border-bottom: $grey solid 2px
+			border-left: $grey solid 2px
+			transform: rotate(-45deg)
+			top: 9px
+			bottom: 8px
+			right: -5px
+		&:hover
+			&::before
+				border-color: $white
+			color: $white
+
+	&__auth
+		display: flex
+		align-items: center
+		margin-left: 20px
+
+	&__login
+		margin-right: 24px
+		color: $grey
+		&:hover
+			color: $white
+
+	&__reg
+		padding: 12px 21px
+		background-color: $blue
+		border-radius: 15px
+		color: $white
+		transition: all .1s
+		&:hover
+			background-color: $blue-hover
+
+.footer
+	&__inner
+		padding-bottom: 95px
+
+	&__top
+		text-align: center
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		color: $white
+		padding-bottom: 185px
+
+	&__top-logo
+		width: 165px
+
+	&__top-title
+		font-size: 100px
+		line-height: 150px
+		font-weight: 700
+
+	&__top-subtitle
+		font-size: 43px
+		line-height: 64px
+		margin-bottom: 15px
+
+	&__top-btn
+		padding: 30px 110px
+		background-color: $blue
+		border-radius: 15px
+		color: $white
+		font-size: 30px
+		font-weight: 600
+		margin-bottom: 25px
+		transition: all .1s
+		&:hover
+			background-color: $blue-hover
+
+	&__bottom
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__bottom-logo
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+
+	&__bottom-mail
+		color: $grey
+		font-size: 27px
+		line-height: 40px
+		&:hover
+			color: $white
+
+	&__bottom-menu-list
+		display: flex
+
+	&__bottom-menu-item
+		font-size: 28px
+		line-height: 42px
+		margin-right: 46px
+
+	&__bottom-menu-item:last-child
+		margin-right: 0
+
+	&__bottom-menu-link
+		color: $grey
+		&:hover
+			color: $white
+
+.footer-auth
+	&__inner
+		color: $white
+		padding: 0 200px 75px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		position: relative
+
+	&__title
+		@extend %h2-title
+
+	&__subtitle
+		margin-bottom: 45px
+
+	&__buttons
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		margin-bottom: 70px
+		position: relative
+		width: 100%
+
+	&__btn
+		padding: 20px
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: transparent
+		border: 2px solid $white
+		transition: all .2s
+		max-width: 450px
+		width: 100%
+		min-width: 320px
+		color: $white
+		font-size: 21px
+		line-height: 32px
+		font-family: $font
+		border-radius: 15px
+		margin: 30px auto 0
+		position: relative
+		&:hover
+			color: $grey
+			border-color: $grey
+
+	&__btn-logo
+		width: 35px
+		height: 35px
+		object-fit: contain
+		margin-right: 20px
+	&__bottom-text
+		font-size: 16px
+		line-height: 24px
+		margin: 0 auto

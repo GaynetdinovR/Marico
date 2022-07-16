@@ -1,0 +1,43 @@
+@media (max-width: $phone)
+	body
+		max-width: $phone
+
+	%h2-title
+		font-size: 55px
+		line-height: 70px
+
+	.logo
+		display: flex
+		justify-content: center
+		align-items: center
+
+		&__text
+			font-size: 20px
+
+		&__img
+			width: 30px
+			margin-right: 5px
+
+	.auth__input
+		padding: 15px 10px
+		&:focus 
+			padding-left: 15px
+
+	.auth__input-wrap
+		width: 250px
+
+@media (max-width: $size-m)
+	.dropdown__hand
+		left: 500px
+
+@media (max-width: $size-m2)
+	.dropdown__hand
+		left: 450px
+
+@media (max-width: $tablet)
+	.auth__input
+		width: 100%
+		&:focus
+			width: 97%
+	.auth__input-wrap
+		width: 260px

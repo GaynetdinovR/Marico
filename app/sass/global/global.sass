@@ -1,0 +1,239 @@
+html,
+body
+	height: 100%
+
+body
+	font-size: 24px
+	font-family: $font
+	line-height: 36px
+	background-color: $black
+
+.wrapper
+	display: flex
+	flex-direction: column
+	min-height: 100%
+
+.main
+	flex: 1 0 auto
+
+.footer
+	flex: 0 0 auto
+
+.container-fluid
+	margin: 0 auto
+	max-width: 1980px
+
+.layout-container
+	margin: 0 auto
+	max-width: 1670px
+	padding: 0 15px
+
+.container
+	margin: 0 auto
+	max-width: 1600px
+	padding: 0 30px
+
+.logo
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: nowrap
+	&__img
+		max-width: 45px
+		margin-right: 17px
+
+	&__text
+		color: $white
+		font-size: 37px
+		line-height: 56px
+		font-weight: 800
+
+	&__img--large
+		max-width: 75px
+		margin-right: 25px
+		width: 75px
+
+	&__text--large
+		color: $white
+		font-size: 62px
+		line-height: 93px
+		font-weight: 800
+
+	
+.dropdown
+
+	&__helper
+		width: 100%
+		height: 100%
+		opacity: 1
+		z-index: 1
+		left: 0
+		top: 0
+		display: none
+		position: absolute
+	&__btn
+		position: relative
+		z-index: 999
+
+	&__list
+		padding: 10px
+		background-color: $white
+		border-radius: 5px
+		border: rgba($grey, 0.5) 1px solid
+		display: flex
+		top: -250px
+		opacity: 0
+		flex-direction: column
+		margin-top: 10px
+		position: absolute
+		min-width: 100px
+		z-index: 999
+
+	&__item
+		width: 100%
+		margin-bottom: 10px
+		&:hover
+			background-color: $blue
+			outline: 12px $blue solid
+
+	&__item:last-child
+		margin-bottom: 0
+	
+	&__link
+		color: $black
+	
+
+/*	&__hand
+		width: 100px
+		height: 130px
+		object-fit: cover
+		position: absolute
+		top: -350px
+		z-index: 999
+		left: 780px*/
+
+.online-creators
+	color: $grey
+	font-size: 38px
+	line-height: 57px
+	display: flex
+	align-items: center
+	&::before
+		display: block
+		content: ''
+		width: 22px
+		height: 22px
+		border-radius: 50%
+		background-color: $green
+		outline: 7px solid rgba($green, .25)
+		margin-right: 20px
+	&__num
+		font-weight: 700
+		color: $white
+		margin-right: 10px
+
+.link--active
+	color: $blue !important
+
+.step
+	&__step
+		text-transform: uppercase
+		color: $blue
+		font-size: 25px
+		line-height: 38px
+		font-weight: 600
+	
+	&__title
+		@extend %h2-title
+		color: $white
+	
+	&__text
+		font-size: 30px
+		line-height: 45px
+		color: $grey
+		margin-bottom: 35px
+		text-align: center
+		max-width: 930px
+	
+	&__list
+		margin-bottom: 65px
+		display: block
+	
+	&__item
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		text-align: left
+		font-size: 23px
+		line-height: 34px
+		color: $white
+		&::before 
+			content: ''
+			width: 30px
+			height: 30px
+			margin-right: 12px
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: $black-2
+			border-radius: 50%
+			font-size: 18px
+			font-weight: 500
+
+	&__buttons
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		max-width: 435px
+		width: 435px
+	
+	&__blue-btn
+		font-family: $font
+		font-size: 20px
+		font-weight: 500
+		padding: 17px 21px
+		color: $white
+		background-color: $blue
+		border: $blue 1px solid
+		border-radius: 15px
+		transition: all .1s
+		cursor: pointer
+		&:hover
+			background-color: $blue-hover
+	
+	&__grey-btn
+		border-radius: 15px
+		font-family: $font
+		font-size: 20px
+		font-weight: 500
+		padding: 17px 36px
+		color: $grey
+		background-color: $black-3
+		border: $grey 1px solid
+		cursor: pointer
+		transition: all .1s
+		&:hover
+			background-color: $black-2
+			border-color: $white
+			color: $white
+
+@for $i from 1 to 3
+	.step__item:nth-child(#{$i})
+		&::before
+			content: '#{$i}'
+
+.text
+	&--blue
+		color: $blue
+	&--white
+		color: $white
+	&--bold
+		font-weight: 700
+	&--grey
+		color: $grey
+
+.show-input_js
+	cursor: pointer
+	filter: invert(70%)

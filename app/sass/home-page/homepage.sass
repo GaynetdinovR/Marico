@@ -1,0 +1,340 @@
+.get-app
+	&__inner
+		padding: 0 300px
+		text-align: center
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+	&__title
+		font-size: 112px
+		line-height: 168px
+		color: $white
+		font-weight: 700
+		margin-bottom: 135px
+	&__title-gradient
+		background: linear-gradient(90deg, #FE6783 2%, #FFBF84 98%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+	&__subtitle
+		font-size: 40px
+		line-height: 60px
+		color: $white
+		font-weight: 500
+		max-width: 700px
+		margin: 0 auto 
+		margin-bottom: 30px
+	&__buttons
+		max-width: 650px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 0 auto
+		flex-wrap: wrap
+	&__blue-btn
+		border: 1px $blue solid
+		min-width: 315px
+		background-color: $blue
+		color: $white
+		padding: 23px 70px
+		font-size: 20px
+		line-height: 30px
+		border-radius: 15px
+		margin-right: 20px
+		font-family: $font
+		font-weight: 600
+		cursor: pointer
+		transition: all .1s
+		&:hover
+			background-color: $blue-hover
+
+	&__grey-btn
+		border-radius: 15px
+		padding: 23px 75px
+		min-width: 315px
+		color: $grey
+		border: 1px solid $grey
+		font-size: 20px
+		line-height: 30px
+		background: transparent
+		font-family: $font
+		font-weight: 600
+		transition: all .1s
+		cursor: pointer
+		&:hover
+			background-color: $black-2
+			border-color: $white
+			color: $white
+
+	&__online-creators
+		margin-top: 20px
+		margin-bottom: 190px
+
+.marico-benefits
+	&__inner
+		text-align: center
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding: 0 220px
+		margin-bottom: 160px
+	&__title
+		@extend %h2-title
+		color: $white
+		margin-bottom: 65px
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		width: 100%
+	&__benefit
+		max-width: 450px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+	&__benefit-title
+		font-size: 35px
+		line-height: 52px
+		color: $white
+		font-weight: 600
+		margin-bottom: 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-left: 25px
+		&::before
+			content: ''
+			display: block
+			width: 35px
+			height: 35px
+			margin-right: 10px
+
+	&__benefit:first-child
+		.marico-benefits__benefit-title
+			&::before
+				background: url(../images/icons/smile-emoji.svg) center/100% no-repeat
+
+	&__benefit:nth-child(2)
+		.marico-benefits__benefit-title
+			&::before
+				background: url(../images/icons/happy-emoji.svg) center/100% no-repeat
+
+	&__benefit:last-child
+		.marico-benefits__benefit-title
+			&::before
+				background: url(../images/icons/party-emoji.svg) center/100% no-repeat
+
+	&__benefit-text
+		font-size: 22px
+		line-height: 33px
+		color: $grey
+
+.step-1
+	&__inner
+		position: relative
+		display: flex
+		justify-content: center
+		flex-direction: column
+		align-items: center
+		margin-bottom: 190px
+		width: 100%	
+	
+	&__text
+		margin-bottom: 35px
+	
+	&__btn
+		font-family: $font
+		font-weight: 600
+		background: transparent
+		padding: 23px 35px
+		color: $grey
+		font-size: 20px
+		border-radius: 15px
+		border: 1px $grey solid
+		margin-bottom: 190px
+		transition: all .1s
+		cursor: pointer
+		&:hover
+			background-color: $black-2
+			border-color: $white
+			color: $white
+
+	&__content
+		position: relative
+		width: 100%
+
+	&__content-subtitle
+		font-size: 30px
+		line-height: 45px
+		color: $white
+		font-weight: 500
+		margin-bottom: 80px
+		
+	&__content-title
+		@extend %h2-title
+		color: $white
+		margin-bottom: 30px
+
+	&__content-img
+		@include contentImage($w: 820px, $h: 600px)
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		box-shadow: 5px 5px 30px 10px rgba($white, 0.2)
+
+.step-2
+	&__inner
+		text-align: center
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding: 0 90px
+		margin-bottom: 190px
+	
+	&__text
+		margin-bottom: 90px
+	
+	&__content
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 50px
+	
+	&__container
+		text-align: left
+		max-width: 850px
+		width: 850px
+		background-color: $black-3
+		min-height: 670px
+		padding: 30px 0 0 30px
+		position: relative
+
+	&__container-name
+		color: $green
+		font-size: 30px
+		line-height: 45px
+	
+	&__container-title
+		@extend %h2-title
+		color: $grey-2
+
+	&__container-title--white
+		color: $white
+
+	&__container-img
+		width: 780px
+		height: 340px
+		position: absolute
+		right: 0
+		bottom: 0
+		object-fit: cover
+		
+	&__blue-btn
+		padding: 22px 83px
+		min-width: 290px
+		color: $white
+		font-family: $font
+		font-size: 20px
+		background-color: $blue
+		font-weight: 500
+		border-radius: 15px
+		transition: all .1s
+		cursor: pointer
+		&:hover
+			background-color: $blue-hover
+
+.step-3
+	&__inner
+		text-align: center
+		display: flex
+		justify-content: center
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		margin-bottom: 190px
+
+	&__text
+		margin-bottom: 190px
+	
+	&__content
+		text-align: left
+		position: relative
+		width: 100%
+	
+	&__content-subtitle
+		font-size: 30px
+		line-height: 45px
+		color: $white
+		font-weight: 500
+		margin-bottom: 80px
+	
+	&__content-title
+		@extend %h2-title
+		color: $white
+		margin-bottom: 30px
+	
+	&__content-image
+		@include contentImage($w: 820px, $h: 600px)
+		position: absolute
+		right: 0
+		bottom: 0
+		top: 0
+		box-shadow: 5px 5px 30px 10px rgba($white, 0.2)
+
+.experts-agree
+	&__inner
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		margin-bottom: 400px
+		padding: 0 45px
+		max-width: 1890px
+
+	&__title
+		@extend %h2-title
+		color: $white
+		margin-bottom: 50px
+
+	&__image
+		min-width: 92.5%
+		height: 445px
+		margin: 0 auto
+		background-color: $black-3
+		display: flex
+		justify-content: center
+		align-items: center
+		&::after
+			color: $white
+			font-size: 32px
+			content: 'There should be a picture with reviews, but designer inserted it badly'
+
+.creators
+	&__inner
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		margin-bottom: 480px
+		width: 100%
+
+	&__title
+		@extend %h2-title
+		color: $white
+		width: 1280px
+		text-align: center
+		position: relative
+		z-index: 11
+
+	&__image
+		width: 100%
+		object-fit: cover
+		position: absolute
+		z-index: 10

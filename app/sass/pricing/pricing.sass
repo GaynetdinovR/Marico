@@ -1,0 +1,141 @@
+.pricing 
+	&__inner
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding: 0 140px
+		margin-bottom: 190px
+		margin-top: 180px
+	
+	&__title
+		@extend %h2-title
+		color: $white
+		text-align: center
+		margin-bottom: 125px
+	
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		flex-wrap: wrap
+
+	&__list
+		min-height: 930px 
+		max-width: 430px
+		border: 1px $grey solid
+		border-radius: 45px
+		background-color: $black-3
+		color: $white
+		padding: 35px
+		position: relative
+
+	&__list--active
+		background-color: $blue
+		.pricing__list-description
+			color: $white
+		.pricing__list-price::after
+			color: $white !important
+		.pricing__list-other-price
+			color: $white
+		.text--grey
+			color: $white
+		.pricing__list-btn
+			border-color: $white
+			background-color: $white
+			color: $blue
+
+	&__list-name
+		font-size: 50px
+		line-height: 75px
+		font-weight: 600
+
+	&__list-description
+		font-size: 27px
+		line-height: 40px
+		color: $grey
+		margin-bottom: 15px
+	
+	&__list-price
+		@extend %h2-title
+		display: block
+		margin-bottom: 110px
+
+	&__list-other-price
+		font-size: 28px
+		line-height: 42px
+		color: $grey
+		position: absolute
+		left: 35px
+		top: 260px
+
+	&__list-privilege
+		display: flex
+		flex-direction: column
+		font-size: 28px
+		line-height: 42px
+		margin-bottom: 50px
+		.text--grey
+			font-size: 24px
+			line-height: 36px
+			margin: 45px auto
+		.text--bold
+			margin-bottom: 10px
+
+	&__list-features
+		position: absolute
+		left: 35px
+		top: 630px
+
+	&__list-features-item
+		font-size: 24px
+		line-height: 36px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		margin-bottom: 20px
+		&::before
+			content: ''
+			background: url(../images/icons/checkmark.svg) center/100% no-repeat
+			width: 25px
+			height: 18px
+			margin-right: 10px
+
+	&__list-features-item:last-child
+		margin-bottom: 0
+
+	&__list-features-title
+		font-size: 28px
+		line-height: 42px
+		font-weight: 600
+		margin-bottom: 30px
+		
+	&__list-btn
+		font-weight: 500
+		padding: 30px 60px
+		background-color: transparent
+		border: 4px $blue solid
+		color: $white
+		font-family: $font
+		font-size: 27px
+		line-height: 40px
+		border-radius: 15px
+		position: absolute
+		min-width: 425px
+		bottom: 35px
+		right: 35px
+		left: 35px
+
+@for $i from 2 to 4
+	.pricing__list:nth-child(#{$i})
+		.pricing__list-price
+			position: relative
+			&::after
+				content: 'Per month'
+				position: absolute
+				color: $grey
+				font-size: 26px
+				line-height: 39px
+				right: 145px
+				top: 60px

@@ -1,0 +1,41 @@
+//colors
+$black: #000
+$black-2: #2D2D2D
+$black-3: #0E0E0E
+$white: #fff
+$blue: #3C82F4 
+$blue-hover: #3C5FF4
+$blue-2: #102142
+$green: #0FC65C
+$grey: #707070
+$grey-2: #919191
+
+
+//media
+$size-l: 1900px
+$size-l2: 1800px
+$size-l3: 1600px
+$size-l4: 1500px
+$size-m: 1366px
+$size-m2: 1280px
+$size-m3: 1100px
+$laptop-s: 1024px
+$tablet: 768px
+$tablet-s: 720px
+$phone: 425px
+$phone-m: 375px
+$phone-s: 320px
+
+
+//fonts
+$font: 'Poppins', sans-serif
+
+%h2-title
+	font-weight: 600
+	font-size: 75px
+	line-height: 110px
+
+@mixin contentImage($w, $h: auto)
+	max-width: $w
+	max-height: $h
+	object-fit: cover
